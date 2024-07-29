@@ -1,0 +1,9 @@
+services:
+  pytest_tutorial:
+    image: pytest_tutorial:latest
+    build:
+      context: .
+    env_file:
+      - '.env'
+    ports:
+      - 8080:80
